@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Coordinación del Campus Virtual - UAM Lerma">
+    <title>Tetsi</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  function activar(indice){
+  const menus=document.getElementsByClassName("nav-link")
+  const apps=document.getElementsByName("apps")
+  for (var i=0; i<menus.length; i++){
+    menus[i].classList.remove('active')
+   
+    if(apps[i].classList.contains('d-block')){
+      apps[i].classList.remove('d-block')
+      apps[i].classList.add('d-none')
+    }
+   
+  } 
+  menus[indice].classList.add('active') 
+  apps[indice].classList.add('d-block')
+  apps[indice].classList.remove('d-none')
+}
+</script>
+
+    <!-- Favicons -->
+<!--link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico"-->
+<meta name="theme-color" content="#7952b3">
+
+
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/cover3.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-wrap h-100 text-center text-white bg-dark">
+    
+      <div class="col-md-4 col-sm-10">
+        <header class="mb-5">
+          <div class="mb-5"><img src="images/ccv.jpg" alt="Logo de la Coordinación del Campus Virtual"></div>
+          <div class="mb-5">
+            
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link active" aria-current="page" href="javascript:activar(0)">Home</a>
+              <a class="nav-link" href="javascript:activar(1)">Aplicaciones Personales</a>
+              <a class="nav-link" href="javascript:activar(2)">Aplicaciones Administrativas</a>
+              <a class="nav-link" href="javascript:activar(3)">Aplicaciones Docentes</a>
+            </nav>
+          </div>
+          
+        </header>
+        <main class="px-3" style="margin-top: 250px;">
+          <h1>Sistema de gestión administrativa y docente TETSI</h1>
+          <p class="lead">Bienvenido al sistema TETSI, aquí encontrarás las aplicaciones asociadas a procesos administrativos y académicos de la unidad.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-outline-light fw-bold" data-bs-toggle="modal" data-bs-target="#modalAyuda"><i class="bi bi-info-circle-fill fs-1"></i></button>
+          </p>
+        </main>
+      
+        <footer class="text-white-50" style="margin-top: 100px;">
+          <div class="row">  
+              <div class="col-6">
+                  <strong>M. en C. Mónica Silva López</strong><br/>
+                  
+                  Jefa de la Sección para la Sistematización de Procesos Administrativos.
+              </div>
+              <div class="col-6">
+                  <strong>Dra. Rafaela Blanca Silva López</strong><br/> 
+      
+                  Coordinadora de Campus Virtual.
+              </div>
+          </div>
+        </footer>
+      </div>
+      <div class="col-md-1 col-sm-2 h-100" style="background-color: #AD25A8;">
+        <img class="h-100" src="images/direccion.jpg">
+      </div>
+      <div name="apps" class="col-md-7 col-sm-12 d-block" style="background-image: url('images/fotoUam.jpg'); background-repeat: no-repeat; background-size: cover;">
+             
+      </div>
+      <!-- comienzan apps personales -->
+      <div class="col-md-7 col-sm-12 bg-white p-4 d-none h-100" name="apps" style="overflow-y:scroll;">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Información del usuario</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación podrás modificar tus datos personales, contraseñas, email, datos académicos, etc. Es importante siempre mantener tus datos actualizados para el correcto funcionamiento del sistema.</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-card-checklist" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Buzón UAM</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación podrás enviar quejas y sugerencias</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-envelope-paper" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Quejas de violencia de género</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación podrás canalizar tu queja</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-gender-trans" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Encuestas</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted" style="text-align: justify;">
+                  <a href="#" class="btn btn-outline-secondary"><i class="bi bi-person-x" title="Abrir encuesta"></i></a> Discriminación laboral<br/>
+                  <a href="#" class="btn btn-outline-secondary"><i class="bi bi-patch-question" title="Abrir encuesta"></i></a> Perfil de pensamiento<br/>
+                  <a href="#" class="btn btn-outline-secondary"><i class="bi bi-mortarboard" title="Abrir encuesta"></i></a> Perfil de aprendizaje<br/>
+                  <a href="#" class="btn btn-outline-secondary"><i class="bi bi-dribbble" title="Abrir encuesta"></i></a> Preferencias deportivas<br/>
+                  <a href="#" class="btn btn-outline-secondary"><i class="bi bi-pie-chart" title="Abrir encuesta"></i></a> Hábitos alimenticios<br/>
+                </p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-dark" style=" border-width: 0px;"><i class="bi bi-clipboard2-data" style="font-size: 6rem;" title="Selecciona la encuesta de la lista"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- terminan apps -->
+
+      <!-- comienzan apps administrativas -->
+      <div class="col-md-7 col-sm-12 bg-white p-4 d-none h-100" name="apps" style="overflow-y:scroll;">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Servicios</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-hand-index-thumb" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Soporte técnico</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-wrench-adjustable" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Salida y retorno de bienes</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-signpost-split" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Adquisiciones</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-cart3" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Préstamos</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-arrow-left-right" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Servicio social</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-briefcase" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Administración de usuarios</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-people" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Administración de bienes</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-graph-up-arrow" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Registro Trep-camp</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-clipboard-check" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- terminan apps -->
+
+      <!-- comienzan apps docentes -->
+      <div class="col-md-7 col-sm-12 bg-white p-4 d-none h-100" name="apps" style="overflow-y:scroll;">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Informes de docencia</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-clipboard2-data" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Informes anuales</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-clipboard2-pulse" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Actualizar información docente</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-arrow-clockwise" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Prácticas de campo</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-binoculars" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Asignación de tutores</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-mortarboard" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">               
+                <h3 class="mb-0 text-secondary">Corrección de calificaciones</h3>
+                <div class="mb-1 text-muted">&nbsp;</div>
+                <p class="card-text mb-auto text-muted">En esta aplicación ...</p>
+               
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-ui-checks-grid" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <!-- terminan apps -->
+    
+      <!-- Modal -->
+<div class="modal fade text-secondary text-start" id="modalAyuda" tabindex="-1" aria-labelledby="modalAyudaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAyudaLabel">PREGUNTAS FRECUENTES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>          
+          <li>Si eres empleado o académico y deseas una cuenta de acceso, favor de solicitarla a la cuenta <b>msilva@correo.ler.uam.mx</b></li>
+          <li>Es importante que tus datos siempre esten actualizados para asegurar que tengas el acceso correcto a las aplicaciones.</li>
+          <li>El sistema siempre se comunicará contigo a través de mensajes de correo electrónico institucional, por lo que debes asegurar que esté bien configurado en tu perfil de acceso</li>
+          <li>Si tienes alguna duda, o quieres reportar alguna falla en el sistema, favor de escribir a la cuenta: <b>msilva@correo.ler.uam.mx</b>.</li>
+            
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

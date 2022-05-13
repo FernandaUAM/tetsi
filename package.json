@@ -1,0 +1,23 @@
+{
+  "name": "tetsi",
+  "version": "1.0.0",
+  "description": "plantilla de tetsi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandaUAM/tetsi.git"
+  },
+  "author": "Patricia Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandaUAM/tetsi/issues"
+  },
+  "homepage": "https://github.com/FernandaUAM/tetsi#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1"
+  }
+}
