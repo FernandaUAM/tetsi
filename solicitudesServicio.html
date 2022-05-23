@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Coordinación del Campus Virtual - UAM Lerma">
+    <title>Gestion</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="theme-color" content="#7952b3">
+
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover4.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">                    
+                    <table class="table mt-5 text-center w-100" style="width: max-content;">
+                        <tbody>
+                            <tr>
+                                <td><h5>PLANEACIÓN</h5>
+                                    <table class="table table-light mt-5 text-center" style="width: max-content;">                    
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Clave:</strong> 53401007</td>
+                                                <td colspan="2"><strong>Responsable:</strong> Gladis Ortíz</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" style="border-top: 2px solid black; border-bottom: 2px solid black;"><strong>Proyecto:</strong> ÁREA DE INVESTIGACIÓN DEL DEPTO DE ESTUDIOS CULTURALES</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="3">Presupuesto</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Asignado</th>
+                                                <th>Ejercido</th>
+                                                <th>Disponible</th>
+                                            </tr>
+                                            <tr>
+                                                <td>$ 80,000.00</td>
+                                                <td>$ 7,000.00</td>
+                                                <td>$ 73,000.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: bottom; padding-bottom: 30px;">
+                                    <div id="prueba-scroll" data-bs-spy="scroll" data-bs-target="#navegacion" data-offset="1" tabindex="0">
+                                        <nav class="navbar navbar-expand bg-dark navbar-dark sticky-top px-3" id="navegacion">
+                                            <a class="navbar-brand" href="#">Solicitudes</a>
+                                            <ul class="navbar-nav">
+                                              
+                                              <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="base0">Transferencias</a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#servicio-1" id="base">12/06/2021</a></li>
+                                                  <li><a class="dropdown-item" href="#servicio-2">13/06/2021</a></li>
+                                                  <li><a class="dropdown-item" href="#servicio-3">14/06/2021</a></li>
+                                                </ul>
+                                              </li>
+                                              <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tramites de facturas</a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#servicio-4">12/06/2021</a></li>
+                                                  <li><a class="dropdown-item" href="#servicio-5">12/06/2021</a></li>
+                                                 
+                                                </ul>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                        <!--nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="navegacion">
+                                          <div class="container-fluid">
+                                            <ul class="navbar-nav">
+                                              
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="#servicio-1">1 TRANSFERENCIA</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="#servicio-2">2 TRÁMITE DE FACTURA</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="#servicio-3">3 TRANSFERENCIA</a>
+                                              </li> 
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="#servicio-4">4 TRANSFERENCIA</a>
+                                              </li>                        
+                                            </ul>
+                                          </div>
+                                        </nav-->
+                                        
+                                        <div id="servicio-1" class="container-fluid bg-light" name="solicitud">
+                                            <h6>TRANSFERENCIA solicitada el 12/06/2021 <a href="#" class="btn btn-outline-secondary fs-2"
+                                                    title="DETALLE DEL SERVICIO"><i class="bi bi-file-earmark-pdf"></i></a></h6>
+                                            <table cellspacing="3" cellpadding="3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><select class="texto" name="estado" id="estado">
+                                                                <option value="ATENDIDA" selected="">ATENDIDA</option>
+                                                                <option value="REVISION">EN REVISIÓN</option>
+                                                                <option value="CANCELADA">CANCELADA</option>
+                                                            </select></td>
+                                                        <td><textarea cols="45" rows="2"></textarea></td>
+                                                    
+                                                        <td colspan="2"><button name="Enviar email" class="btn btn-outline-secondary fs-2"
+                                                                title="Enviar notificación" onclick="window.location='solicitudesServicio1.html'" id="sub"
+                                                                value="Enviar notificación"><i class="bi bi-reply"></i></button></td>
+                                        
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                        
+                                        <div id="servicio-2" class="container-fluid bg-light" name="solicitud">
+                                            <h6>TRANSFERENCIA solicitada el 13/06/2021 <a href="#" class="btn btn-outline-secondary fs-2"
+                                                    title="DETALLE DEL SERVICIO"><i class="bi bi-file-earmark-pdf"></i></a></h6>
+                                            <table cellspacing="3" cellpadding="3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><select class="texto" name="estado" id="estado">
+                                                                <option value="ATENDIDA" selected="">ATENDIDA</option>
+                                                                <option value="REVISION">EN REVISIÓN</option>
+                                                                <option value="CANCELADA">CANCELADA</option>
+                                                            </select></td>
+                                                        <td><textarea cols="45" rows="2"></textarea></td>
+                                                    
+                                                        <td colspan="2"><button name="Enviar email" class="btn btn-outline-secondary fs-2"
+                                                                title="Enviar notificación" onclick="window.location='solicitudesServicio1.html'" id="sub"
+                                                                value="Enviar notificación"><i class="bi bi-reply"></i></button></td>
+                                        
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="servicio-3" class="container-fluid bg-light" name="solicitud">
+                                            <h6>TRANSFERENCIA solicitada el 14/06/2021 <a href="#" class="btn btn-outline-secondary fs-2"
+                                                    title="DETALLE DEL SERVICIO"><i class="bi bi-file-earmark-pdf"></i></a></h6>
+                                            <table cellspacing="3" cellpadding="3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><select class="texto" name="estado" id="estado">
+                                                                <option value="ATENDIDA" selected="">ATENDIDA</option>
+                                                                <option value="REVISION">EN REVISIÓN</option>
+                                                                <option value="CANCELADA">CANCELADA</option>
+                                                            </select></td>
+                                                        <td><textarea cols="45" rows="2"></textarea></td>
+                                                    
+                                                        <td colspan="2"><button name="Enviar email" class="btn btn-outline-secondary fs-2"
+                                                                title="Enviar notificación" onclick="window.location='solicitudesServicio1.html'" id="sub"
+                                                                value="Enviar notificación"><i class="bi bi-reply"></i></button></td>
+                                        
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="servicio-4" class="container-fluid bg-white" name="solicitud">
+                                            <h6>4-TRÁMITE DE FACTURA solicitada el 12/06/2021 <a href="#" class="btn btn-outline-secondary fs-2"
+                                                    title="DETALLE DEL SERVICIO"><i class="bi bi-file-earmark-pdf"></i></a></h5>
+                                        
+                                            <table cellspacing="3" cellpadding="3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><select class="texto" name="estado" id="estado">
+                                                                <option value="ATENDIDA" selected="">ATENDIDA</option>
+                                                                <option value="REVISION">EN REVISIÓN</option>
+                                                                <option value="CANCELADA">CANCELADA</option>
+                                                            </select></td>
+                                                        <td><textarea cols="45" rows="2"></textarea></td>
+                                                        <td colspan="2"><button name="Enviar email" class="btn btn-outline-secondary fs-2"
+                                                                title="Enviar notificación" onclick="window.location='solicitudesServicio1.html'" id="sub"
+                                                                value="Enviar notificación"><i class="bi bi-reply"></i></button></td>
+                                        
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="servicio-5" class="container-fluid bg-white" name="solicitud">
+                                            <h6>5-TRÁMITE DE FACTURA solicitada el 12/06/2021 <a href="#" class="btn btn-outline-secondary fs-2"
+                                                    title="DETALLE DEL SERVICIO"><i class="bi bi-file-earmark-pdf"></i></a></h5>
+                                        
+                                            <table cellspacing="3" cellpadding="3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><select class="texto" name="estado" id="estado">
+                                                                <option value="ATENDIDA" selected="">ATENDIDA</option>
+                                                                <option value="REVISION">EN REVISIÓN</option>
+                                                                <option value="CANCELADA">CANCELADA</option>
+                                                            </select></td>
+                                                        <td><textarea cols="45" rows="2"></textarea></td>
+                                                        <td colspan="2"><button name="Enviar email" class="btn btn-outline-secondary fs-2"
+                                                                title="Enviar notificación" onclick="window.location='solicitudesServicio1.html'" id="sub"
+                                                                value="Enviar notificación"><i class="bi bi-reply"></i></button></td>
+                                        
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+
+            <div class="col-12">
+                <div class="table-responsive">                    
+                    <table class="table table-striped table-light table-hover mt-5 text-center" style="width: max-content;">
+                        <tbody>
+                            <tr class="table-dark">
+                                <th>PARTIDA</th>
+                                <th>CONCEPTO</th>
+                                <th>PRESUPUESTO ASIGNADO</th>
+                                <th>PRESUPUESTO EJERCIDO</th>
+                                <th>PRESUPUESTO DISPONIBLE</th>
+                            </tr>
+                    
+                    
+                            <tr>
+                                <td>3330101</td>
+                                <td>PAPELERÍA Y ARTÍCULOS DE OFICINA </td>
+                                <td>$40,000.00</td>
+                                <td>$2,000.00</td>
+                                <td>$38,000.00</td>
+                            </tr>
+                    
+                    
+                            <tr>
+                                <td>3320101</td>
+                                <td>MATERIALES Y ÚTILES DE IMPRESIÓN. REPRODUCCIÓN Y ENCUADERNACIÓN </td>
+                                <td>$40,000.00</td>
+                                <td>$5,000.00</td>
+                                <td>$35,000.00</td>
+                    
+                            </tr>
+                    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="row">
+            
+            
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    //altura=document.getElementById("section1").style.height
+   // alert(altura)
+    var div = document.getElementById('servicio-2');
+    var yPos = div.getBoundingClientRect().top;   
+    
+    var div = document.getElementById('navegacion');
+       
+    var altura=div.getBoundingClientRect().bottom-div.getBoundingClientRect().top+"px"
+    var solicitudes=document.getElementsByName("solicitud");
+    for(var i=0; i<solicitudes.length; i++)
+        solicitudes[i].style.paddingTop=altura;
+    
+    var bloque=document.getElementById('prueba-scroll');
+    var bloqueyPos = bloque.getBoundingClientRect().top;  
+    document.getElementById('prueba-scroll').style.height=(yPos-bloqueyPos)+"px";
+  
+   /* document.getElementById("base").click();
+    document.getElementById("base").classList.add("active")
+    document.getElementById("base0").classList.add("active")*/
+</script>
+</html>

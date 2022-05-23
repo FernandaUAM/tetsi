@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Coordinación del Campus Virtual - UAM Lerma">
+    <title>Gestion</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <meta name="theme-color" content="#7952b3">
+
+
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/cover4.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">         
+          <div class="col-12" style="text-align: center;">
+           
+                <label>BUSCADOR DE PROYECTOS PRESUPUESTALES VIGENTES</label>            
+         
+                <form class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="clave" class="m-2">Clave</label>
+                        <input type="number" size="8" pattern="{8,9}" class="form-control m-2" id="clave" placeholder="8 dígitos" required style="display: inline-block;
+                        width: auto;"><button class="btn btn-secondary m-2" type="submit"><i class="bi bi-search"></i></button>
+                        <div class="invalid-feedback">
+                           La clave debe tener 8 dígitos
+                          </div>
+                    </div>  
+                </form>   
+          </div>
+          <div class="col-12">
+            <div class="table-responsive">
+          <table class="table table-light table-striped table-hover mt-5 text-center">
+            <thead class="table-secondary">
+                <tr>
+                    <th colspan="8">PROYECTOS PRESUPUESTALES VIGENTES<br><br></th> 
+                </tr>
+                <tr>
+                    <th>CLAVE</th> 
+                    <th>PROYECTO</th> 
+                    <th>PRESUPUESTO ASIGNADO</th>  
+                    <th>PRESUPUESTO EJERCIDO</th>  
+                    <th>PRESUPUESTO DISPONIBLE</th>              
+                    <th>INFORME PRESUPUESTAL</th>  
+                    <th>SOLICITUDES POR ATENDER</th>  
+                </tr>
+            </thead>
+
+            <tbody class="table-group-divider"> 
+				<tr>
+                    <td>53401007<br></td>
+                    <td align="left">COMUNICACIONES ACADÉMICAS: UN ENFOQUE RELACIONAL DE LA INVESTIGACIÓN EDUCATIVA EN MÉXICO, 2010</td>
+                    <td>$80,000</td>
+                    <td>$5,000</td>
+                    <td>$75,000</td>
+                    <td> <a href="detalleProyectoPresupuestal2.html" class="btn btn-outline-secondary"><i class="bi bi-clipboard2-data" style="font-size: 4rem;" title="Ver informe"></i></a></td>
+                    <td>2<br><button class="btn-outline-secondary" name="solicitudesServicio" onclick="window.location='solicitudesServicio.html'"><i class="bi bi-hand-index-thumb" style="font-size: 2rem;" title="Atención de Servicios"></i></button></td>
+                </tr>
+                
+                <tr>
+                    <td>53401007<br></td>
+                    <td align="left">ÁREA DE INVESTIGACIÓN DEL DEPARTAMENTO DE ESTUDIOS CULTURALES</td>
+                    <td>35,500</td>  
+                    <td>5,000</td>  
+                    <td>30,500</td>     
+                    <td> <a href="detalleProyectoPresupuestal2.html" class="btn btn-outline-secondary"><i class="bi bi-clipboard2-data" style="font-size: 4rem;" title="Ver informe"></i></a></td>
+                    <td>0</td>
+                </tr>
+                
+                <tr>
+                    <td>53401009<br></td>
+                    <td align="left">GESTIÓN DEL DEPARTAMENTO DE ESTUDIOS CULTURALES</td>
+                    <td>10,000</td>      
+                    <td>5,000</td>            
+                    <td>5,000</td>     
+                    <td> <a href="detalleProyectoPresupuestal2.html" class="btn btn-outline-secondary"><i class="bi bi-clipboard2-data" style="font-size: 4rem;" title="Ver informe"></i></a></td>
+                    <td>0</td>
+                </tr>
+            
+            </tbody>
+          </table>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+       
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) { 
+            form.addEventListener('submit', function(event) {
+               
+              if(form.clave.value.length!=8){
+
+                form.clave.classList.add('is-invalid')
+                form.clave.classList.remove('is-valid')
+                event.preventDefault();
+                event.stopPropagation();               
+              }
+             
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            
+            form.classList.add('was-validated');
+            }, false);
+        });
+        }, false);
+    })();
+    </script>
+</html>
+    
