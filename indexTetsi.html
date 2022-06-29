@@ -10,7 +10,7 @@
     <!-- Bootstrap core CSS -->
 <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script type="text/javascript">
   function activar(indice){
   const menus=document.getElementsByClassName("nav-link")
@@ -102,8 +102,12 @@
                
               </div>
               <div class="col-auto">
-                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-card-checklist" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
-                <a href="javascript:void(0)" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal2"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+                <a href="plantilla_menu_hamburguesa.html" class="btn btn-outline-secondary"><i class="bi bi-card-checklist" style="font-size: 6rem;" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-placement="right"
+                  title="Ejemplo de menú hamburguesa"></i></a><br/>
+                <a href="javascript:void(0)" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal2"><i class="bi bi-info-square" style="font-size: 5rem;" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-placement="right"
+                  title="Ejemplo modal con vídeo"></i></a>
               </div>
              
             </div>
@@ -118,8 +122,12 @@
                
               </div>
               <div class="col-auto">
-                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-envelope-paper" style="font-size: 6rem;" title="Abrir aplicación"></i></a><br/>
-                <a href="javascript:void(0)" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal3"><i class="bi bi-info-square" style="font-size: 5rem;" title="Infografía"></i></a>
+                <a href="gestionPresupuesto.html" class="btn btn-outline-secondary"><i class="bi bi-envelope-paper" style="font-size: 6rem;" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-placement="right"
+                  title="Ejemplo tabla con buscador"></i></a><br/>
+                <a href="javascript:void(0)" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal3"><i class="bi bi-info-square" style="font-size: 5rem;" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-placement="right"
+                  title="Ejemplo modal con infografía"></i></a>
               </div>
             </div>
           </div>
@@ -421,9 +429,9 @@
     
     </div>
     <div class="modal-body responsive">
-      <div class="ratio ratio-1x1">
+     
         <img src="images/Recomendaciones_para_uso_de_transporte_publico.jpeg">
-      </div>
+      
     </div>
     <div class="modal-footer">
       Algún texto descriptivo
@@ -458,4 +466,11 @@
 </div> <!-- end modal video -->
 
   </body>
+  <script type="text/javascript">
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  
 </html>

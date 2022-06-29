@@ -4,7 +4,12 @@
 
 
 /* Custom default button */
-
+.titulo1 {
+  color: #AD25A8 !important;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-decoration: none;
+}
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
@@ -18,11 +23,11 @@
 
 
 .btn-outline-secondary:hover, .btn-outline-secondary:focus {
-  color: #fff;
+  color: #fff !important;
   background-color: #AD25A8;
 }
 .btn-outline-secondary {
-  color: #AD25A8;
+  color: #AD25A8 !important;
    border-width: 0px;
 }
 /*
@@ -79,4 +84,31 @@
   color: #FFF;
   width: auto;
   white-space: nowrap;  
+}
+
+.list-group-item.nav-item:hover{
+  color: #fff !important;
+  background-color: #AD25A8;
+}
+
+.list-group-item.nav-item{
+ 
+  background-color: #fff;
+}
+.list-group-item.nav-item a{
+color: #6c757d;
+}
+.list-group-item.nav-item a:hover{
+  color: #fff;
+  }
+  .table-purple {
+    --bs-table-bg: #AD25A8;
+    --bs-table-striped-bg: #ad25a8bc;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #ad25a827;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #8d1d89;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #AD25A8;
 }
